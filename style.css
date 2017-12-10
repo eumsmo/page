@@ -1,0 +1,84 @@
+body,html{
+  min-height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+nav{
+  background-color: #03a9f4;
+  min-height: 3em;
+}
+nav ul{margin: 0;}
+nav li{
+  display: inline-block;
+
+}
+
+#perfil{
+  display: flex;
+}
+
+
+#perfil-inf{
+  width: 50%;
+  text-align: center;
+  padding: 1.5em;
+  position: relative;
+}
+
+#perfil-inf::before{
+  content: "";
+  background-image: url('lake-night.jpg');
+  background-size: auto 100%;
+  background-position:top;
+  filter: blur(.05em);
+  transform: scale(1.05,1.05);
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3
+
+}
+
+
+#posts{
+  width: 50%;
+  background-color: white;
+  padding: 1.5em;
+}
+
+#foto-usuario{
+  width: 10em;
+  border-radius: 50%;
+  margin-bottom: 1.5em;
+}
+
+
+
+#posts img{ width: 5em;}
+
+@media screen and (min-width: 951px){
+  #posts{
+    max-height: 92vh;
+    overflow-y:scroll;
+  }
+
+  body,html{
+    overflow: hidden !important;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #perfil{
+    display: block;
+  }
+
+  #perfil section{
+    width: 100%;
+  }
+
+
+}
