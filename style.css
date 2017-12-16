@@ -19,7 +19,7 @@ nav li{
 }
 
 #pesquisar-holder{
-  display:  flex; 
+  display:  flex;
 }
 
 #pesquisar-input{
@@ -86,7 +86,7 @@ nav li{
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 951px) {
   #perfil{
     display: block;
   }

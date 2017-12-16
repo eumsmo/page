@@ -4,8 +4,6 @@ const apelido = 'Juan Vitor';
 const bio = 'Sou eu, eu mesmo, Juan Vitor. Esse é meu site :3';
 const google ='https://www.google.com.br/#q=';
 
-document.title = nome;
-
 $('#username').html(nome);
 $('#apelido').html(apelido);
 $('#bio').html(bio);
@@ -44,5 +42,3 @@ let config = {
   "dataOnly": true
 };
 twitterFetcher.fetch(config);
-
-

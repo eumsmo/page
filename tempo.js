@@ -13,14 +13,22 @@ function easterEggs(hora,minuto,segundo){
 
 	let bom = $('.mensagem-bom');
 
-	if(hora >= 6 && hora < 13 )
+	if(hora >= 6 && hora < 13 ){
 		bom.html('Bom Dia!');
-	if(hora >= 13 && hora < 19)
+		document.title = 'Bom Dia!';
+	}
+	if(hora >= 13 && hora < 19){
 		bom.html('Boa Tarde!');
-	if(hora >= 19 && hora < 24)
+		document.title = 'Boa Tarde!';
+	}
+	if(hora >= 19 && hora < 24){
 		bom.html('Boa Noite!');
-	if(hora >= 0 && hora < 6)
+		document.title = 'Boa Noite!';
+	}
+	if(hora >= 0 && hora < 6){
 		bom.html('Boa Madruga!');
+		document.title = 'Boa Madruga!';
+	}
 
 	/* Me ajude dando dica de easter eggs! */
 
